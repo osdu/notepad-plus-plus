@@ -230,7 +230,7 @@ void TabBar::reSizeTo(RECT & rc2Ajust)
 	int marge = 0;
 
 	LONG_PTR style = ::GetWindowLongPtr(_hSelf, GWL_STYLE);
-	if (rowCount == 1)
+	if (rowCount >= 1)
 	{
 		style &= ~TCS_BUTTONS;
 	}
